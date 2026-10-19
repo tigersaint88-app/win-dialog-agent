@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "win-dialog-agent"
+version = "0.1.0"
+description = "Semantic Windows dialog automation for AI agents (OpenAI Agents SDK + MCP). 面向 AI Agent 的语义级 Windows 对话框自动化。"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+  { name = "win-dialog-agent contributors" },
+]
+keywords = [
+  "windows",
+  "uia",
+  "dialog",
+  "mcp",
+  "openai-agents",
+  "pywinauto",
+  "automation",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Desktop Environment",
+]
+dependencies = [
+  "openai-agents>=0.2.0",
+  "pywinauto>=0.6.8",
+  "mcp>=1.6.0",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.2",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/tigersaint88-app/win-dialog-agent"
+Documentation = "https://github.com/tigersaint88-app/win-dialog-agent#readme"
+Issues = "https://github.com/tigersaint88-app/win-dialog-agent/issues"
+Changelog = "https://github.com/tigersaint88-app/win-dialog-agent/blob/main/CHANGELOG.md"
+
+[project.scripts]
+win-dialog-agent = "win_dialog_agent.server:main"
+win-dialog-mcp = "win_dialog_agent.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/win_dialog_agent"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/README.md",
+  "/LICENSE",
+  "/CHANGELOG.md",
+  "/.env.example",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-m \"not integration\""
+markers = [
+  "integration: real Windows UI scenarios (run with: pytest -m integration)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
