@@ -8,6 +8,7 @@
   "homepage": "https://github.com/tigersaint88-app/win-dialog-agent",
   "repository": "https://github.com/tigersaint88-app/win-dialog-agent",
   "license": "MIT",
+  "logo": "assets/logo.svg",
   "keywords": [
     "windows",
     "mcp",

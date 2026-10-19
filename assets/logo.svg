@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="win-dialog-agent">
+  <!-- 1:1 logotype with background plate (Cursor Marketplace requirement) -->
+  <rect width="512" height="512" rx="96" fill="#E8EEF5"/>
+  <!-- Dialog chrome -->
+  <rect x="96" y="128" width="320" height="256" rx="20" fill="#FFFFFF" stroke="#1F2937" stroke-width="14"/>
+  <!-- Title bar -->
+  <path d="M96 148c0-11 9-20 20-20h280c11 0 20 9 20 20v44H96v-44z" fill="#0F6E6E"/>
+  <!-- Title bar dots -->
+  <circle cx="136" cy="150" r="10" fill="#D1FAE5"/>
+  <circle cx="168" cy="150" r="10" fill="#A7F3D0"/>
+  <!-- Message lines -->
+  <rect x="140" y="220" width="200" height="16" rx="8" fill="#94A3B8"/>
+  <rect x="140" y="252" width="152" height="16" rx="8" fill="#CBD5E1"/>
+  <!-- Buttons: OK / Cancel metaphor -->
+  <rect x="156" y="308" width="88" height="40" rx="10" fill="#0F6E6E"/>
+  <rect x="268" y="308" width="88" height="40" rx="10" fill="#FFFFFF" stroke="#0F6E6E" stroke-width="8"/>
+</svg>
