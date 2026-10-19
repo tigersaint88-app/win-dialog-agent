@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "win-dialog-agent": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/tigersaint88-app/win-dialog-agent",
+        "win-dialog-mcp"
+      ]
+    }
+  }
+}

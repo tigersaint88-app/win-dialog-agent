@@ -1,0 +1,19 @@
+{
+  "name": "win-dialog-agent",
+  "version": "0.1.0",
+  "description": "Semantic Windows dialog automation for AI agents (#32770 Save As / Open / MessageBox via UIA + MCP).",
+  "author": {
+    "name": "ForgeCopilot LLC"
+  },
+  "homepage": "https://github.com/tigersaint88-app/win-dialog-agent",
+  "repository": "https://github.com/tigersaint88-app/win-dialog-agent",
+  "license": "MIT",
+  "keywords": [
+    "windows",
+    "mcp",
+    "uia",
+    "dialog",
+    "automation",
+    "agents"
+  ]
+}

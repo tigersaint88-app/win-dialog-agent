@@ -93,25 +93,32 @@ python -m win_dialog_agent.server
 {
   "mcpServers": {
     "win-dialog-agent": {
-      "command": "win-dialog-mcp",
-      "args": []
-    }
-  }
-}
-```
-
-With `uvx` (after PyPI publish):
-
-```json
-{
-  "mcpServers": {
-    "win-dialog-agent": {
       "command": "uvx",
-      "args": ["win-dialog-agent"]
+      "args": [
+        "--from",
+        "git+https://github.com/tigersaint88-app/win-dialog-agent",
+        "win-dialog-mcp"
+      ]
     }
   }
 }
 ```
+
+After PyPI publish you can simplify to `uvx win-dialog-agent`.
+
+### Cursor Marketplace / Agent Plugin
+
+This repo includes:
+
+- `.cursor-plugin/plugin.json` — Cursor Plugin manifest
+- `plugin.json` — Agent Plugins (open standard) manifest
+- `mcp.json` — MCP server entry for marketplace install
+- `skills/windows-dialog-ops/` — agent skill for dialog workflows
+
+Submit / update listing: [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish)  
+Community directory: [cursor.directory](https://cursor.directory)
+
+Local plugin test (optional): copy this repo into `~/.cursor/plugins/local/win-dialog-agent`, then Reload Window.
 
 ### Inspector self-test
 

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "win-dialog-agent",
+  "description": "Semantic Windows dialog automation for AI agents (#32770 Save As / Open / MessageBox via UIA + MCP).",
+  "version": "0.1.0",
+  "author": {
+    "name": "ForgeCopilot LLC"
+  },
+  "license": "MIT",
+  "keywords": [
+    "windows",
+    "mcp",
+    "uia",
+    "dialog",
+    "automation",
+    "agents"
+  ]
+}
