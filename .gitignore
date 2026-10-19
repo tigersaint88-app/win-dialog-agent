@@ -24,5 +24,9 @@ Desktop.ini
 
 # Local dumps
 *.log
-*.png
 *.bmp
+# Ignore ad-hoc screenshots, but keep marketplace/extension icons
+*.png
+!assets/**/*.png
+!vscode-extension/media/
+!vscode-extension/media/**/*.png
