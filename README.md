@@ -120,6 +120,14 @@ Community directory: [cursor.directory](https://cursor.directory)
 
 Local plugin test (optional): copy this repo into `~/.cursor/plugins/local/win-dialog-agent`, then Reload Window.
 
+### VS Code Extension Marketplace (path C)
+
+Branch `vscode_market` adds a VS Code extension under [`vscode-extension/`](vscode-extension/) that registers this MCP server via `vscode.lm.registerMcpServerDefinitionProvider`.
+
+- Publisher ID: `forgecopilot` (**ForgeCopilot LLC**)
+- Extension: `forgecopilot.win-dialog-agent`
+- Publish steps: [PUBLISHING_VSCODE.md](PUBLISHING_VSCODE.md)
+
 ### Inspector self-test
 
 ```bash
